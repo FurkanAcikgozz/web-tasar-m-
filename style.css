@@ -1,0 +1,92 @@
+*
+{
+    margin:0;   /*etraftaki kenar boşlukları */
+     padding: 0;  /*(dolgu içeriğin etrafındaki boşluk) */
+    font-family: Arial, Helvetica, sans-serif;  /*yazı tipi */
+}
+
+body
+{
+    background: #262626 url(https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg);/*arka plan resmimiz */
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form{ /*form ekranımız*/
+    background: #2a3a42da;
+    padding: 20px;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+    width:290px;
+    height:370px;
+    position:relative;
+}
+
+form h2{   /* (giriş) başlık*/
+    margin-top:10px;
+    font-size: 40px;
+    color:rgb(228, 228, 228);
+    margin-bottom: 20px;
+}
+
+form input {/*form içindeki text */
+    border:none;
+    background: none;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin:15px;
+    color:white;
+    height:30px;
+    width:70%;
+    border-radius: 40px;
+    transition: 0.3s ease-in;
+}
+
+form input[type="text"], form input[type="password"]{/*şifre textimiz */
+    border:solid 2px #1B9CFC
+}
+
+form input[type="submit"]{/*form üzerindeki butonumuz */
+    border:solid 2px #55E6C1;
+    height:50px;
+    width:40%;
+    cursor: pointer;
+}
+
+form input[type="button"]{
+    border:solid 2px #55E6C1;
+    height:50px;
+    width:40%;
+    cursor: pointer;
+
+}
+
+
+form input[type="text"]:focus, form input[type="password"]:focus{/* textlerimizin üzerine tıklanınca belirlenen olaylar*/
+    width:80%;
+    border:solid 2px #55E6C1;
+}
+
+form input[type="submit"]:hover{/*butunumuza tıklanınca gerçekeleşecek olaylar */
+    background: #070707;
+    color:#ffffff;
+}
+form input[type="button"]:hover{
+    background: #f0e6e6;
+    color:#ffffff;
+}
+
+
+.link{
+  position:absolute;
+  bottom:3rem;
+  background:transparent;
+  padding:1.5rem 3.5rem;
+}
